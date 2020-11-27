@@ -1,0 +1,41 @@
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		String s1= "Java";
+		String s2= "Programs";
+		System.out.println(s1+s2);
+		System.out.println(s1.charAt(1));
+		System.out.println(s1.compareTo(s2));
+		System.out.println(s2.compareTo(s1));
+		s1=s1.concat("Java");
+		System.out.println(s1);
+		System.out.println(s1.contains("orld"));
+		System.out.println(s1.endsWith("ld"));
+		byte[] barr=s1.getBytes();  
+		for(int i=0;i<barr.length;i++){  
+		    System.out.println(barr[i]);  
+		}
+		char[] ch=new char[10];
+		s1.getChars(2,7,ch,0);
+		System.out.println(ch);
+		
+		System.out.println(s1.isEmpty());
+		System.out.println(s2.lastIndexOf('r'));
+		System.out.println(s1.length());
+		System.out.println(s1.replace('a','p'));
+		
+		String s3="java string split method";  
+		String[] words=s3.split("\\s"); 
+		for(String w:words){  
+		    System.out.println(w);  
+		}
+		
+		int a=10;
+		float b=10.0f;
+		
+		System.out.println(String.valueOf(a));
+		System.out.println(String.valueOf(b));
+	}
+}

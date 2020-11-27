@@ -1,0 +1,50 @@
+import java.util.*;  
+class Main{  
+public static void main(String args[]){  
+    
+//PriorityQueue ===================================================
+PriorityQueue<String> queue=new PriorityQueue<String>();  
+queue.add("Amit");  
+queue.add("Vijay");  
+queue.add("Karan");  
+queue.add("Jai");  
+queue.add("Rahul");  
+System.out.println("head:"+queue.element());  
+System.out.println("head:"+queue.peek());  
+System.out.println(queue.add("Raj"));
+System.out.println(queue.offer("Rajay"));
+System.out.println(queue);
+System.out.println(queue.poll());
+System.out.println(queue);
+
+//DeQueue ======================================================
+Deque<String> deque = new ArrayDeque<String>();  
+   deque.add("Ravi");    
+   deque.add("Vijay");     
+   deque.add("Ajay");    
+System.out.println(deque);
+System.out.println(deque.offer("Raja"));
+System.out.println(deque.element());
+
+//Map ===============================================================
+ Map<Integer,String> map=new HashMap<Integer,String>();  
+  map.put(100,"Amit");  
+  map.put(101,"Vijay");  
+  map.put(102,"Rahul"); 
+  
+ 
+ Map<Integer,String> map1=new HashMap<Integer,String>(); 
+  map1.put(103,"Raj"); 
+  map1.put(null,"Rajesh"); 
+ map1.putAll(map);
+ map1.putIfAbsent(null,"Rajay");
+ map1.remove(null);
+ System.out.println(map1);
+  System.out.println(map1.keySet());
+  System.out.println(map1.containsValue("Rajesh"));
+  System.out.println(map1.containsKey(103));
+  
+System.out.println(map1.entrySet());
+System.out.println(map1.get(101));  
+}
+}
